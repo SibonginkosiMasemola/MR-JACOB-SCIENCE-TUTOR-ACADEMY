@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MR JACOB SCIENCE TUTOR ACADEMY</title>
+<meta name="description" content="MR JACOB SCIENCE TUTOR ACADEMY - tutoring, online lessons, group lessons and revision support.">
+<style>
+:root{
+  --navy:#071a38;
+  --blue:#0b5ed7;
+  --gold:#d4a72c;
+  --light:#f5f8fc;
+  --white:#fff;
+  --text:#172033;
+  --muted:#68758a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{
+  position:sticky;top:0;z-index:1000;background:rgba(7,26,56,.97);
+  box-shadow:0 4px 18px rgba(0,0,0,.16)
+}
+.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:#fff}
+.brand span{font-size:15px;letter-spacing:.5px}
+.menu{display:flex;gap:25px;align-items:center}
+.menu a{color:#fff;font-weight:700;font-size:14px}
+.menu a:hover{color:#f0c94f}
+.nav-btn{background:var(--blue);padding:11px 17px;border-radius:25px}
+.hero{
+  min-height:680px;display:flex;align-items:center;text-align:center;color:#fff;
+  background:
+    linear-gradient(rgba(3,14,32,.80),rgba(3,14,32,.90)),
+    radial-gradient(circle at top right,#174b92 0,#071a38 52%,#020914 100%);
+}
+.hero-logo{
+  width:190px;height:190px;object-fit:cover;border-radius:50%;
+  border:5px solid var(--gold);background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.35);
+  margin-bottom:24px
+}
+.hero h1{font-size:clamp(34px,6vw,66px);line-height:1.05;text-transform:uppercase;letter-spacing:1px}
+.hero .slogan{font-size:clamp(19px,3vw,29px);color:#f0c94f;font-weight:700;font-style:italic;margin:18px 0}
+.hero p{max-width:780px;margin:0 auto 28px;color:#e8eef8;font-size:18px}
+.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:30px;font-weight:800}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-gold{background:var(--gold);color:#081a35}
+.btn-outline{border:2px solid #fff;color:#fff}
+section{padding:78px 0}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font-size:38px;color:var(--navy);margin-bottom:8px}
+.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:#fff;border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(12,32,60,.08);
+  border:1px solid #e7edf5
+}
+.card h3{color:var(--navy);margin-bottom:10px;font-size:22px}
+.card p{color:var(--muted)}
+.icon{font-size:34px;margin-bottom:12px}
+.subjects{background:#fff}
+.subject-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.subject-box{background:var(--light);border-radius:20px;padding:30px;border-left:5px solid var(--blue)}
+.subject-box h3{color:var(--navy);margin-bottom:14px}
+.subjects-list{display:flex;flex-wrap:wrap;gap:10px}
+.subject{background:#fff;border:1px solid #dce5f0;border-radius:22px;padding:9px 14px;font-weight:700}
+.pricing{background:linear-gradient(180deg,#071a38,#0b2b58);color:#fff}
+.pricing .section-title h2{color:#fff}
+.pricing .section-title p{color:#cbd8eb}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{background:#fff;color:var(--text);border-radius:22px;padding:28px;min-height:205px;display:flex;flex-direction:column;justify-content:space-between}
+.price-card h3{color:var(--navy)}
+.price{font-size:30px;font-weight:900;color:var(--blue);margin:12px 0}
+.note{font-size:14px;color:var(--muted)}
+.highlight{border:4px solid var(--gold)}
+.contact{
+  background:#fff
+}
+.contact-wrap{
+  background:linear-gradient(135deg,#071a38,#0c3975);color:#fff;border-radius:28px;padding:48px;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center
+}
+.contact h2{font-size:42px;line-height:1.1;margin-bottom:14px}
+.contact p{color:#d9e4f3}
+.contact-info{display:grid;gap:13px;margin-top:22px}
+.contact-item{background:rgba(255,255,255,.09);padding:14px 16px;border-radius:14px}
+.contact-item strong{display:block;color:#f0c94f}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+footer{background:#020914;color:#b9c6d8;text-align:center;padding:28px 0}
+footer strong{color:#fff}
+.whatsapp{
+  position:fixed;right:22px;bottom:22px;z-index:999;background:#25D366;color:#fff;
+  width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:28px;font-weight:900;box-shadow:0 10px 25px rgba(0,0,0,.25)
+}
+@media(max-width:800px){
+  .menu{display:none}
+  .grid,.price-grid,.subject-grid,.contact-wrap{grid-template-columns:1fr}
+  .hero{min-height:620px}
+  .hero-logo{width:150px;height:150px}
+  section{padding:60px 0}
+  .contact{padding:55px 0}
+  .contact-wrap{padding:30px 24px}
+  .contact h2{font-size:34px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home">
+      <img src="assets/mr-jacob-logo.jpg" alt="MR JACOB SCIENCE TUTOR logo">
+      <span>MR JACOB SCIENCE TUTOR ACADEMY</span>
+    </a>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#rates">Rates</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-btn" href="https://wa.me/27606087792?text=Hello%20Mr%20Jacob%20Science%20Tutor%20Academy">WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <img class="hero-logo" src="assets/mr-jacob-logo.jpg" alt="MR JACOB SCIENCE TUTOR ACADEMY logo">
+    <h1>MR JACOB SCIENCE TUTOR ACADEMY</h1>
+    <div class="slogan">“Knowledge is power”</div>
+    <p>Quality tutoring and academic support designed to help learners understand, learn and succeed.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="#rates">View Lesson Rates</a>
+      <a class="btn btn-gold" href="https://wa.me/27606087792?text=Hello%20Mr%20Jacob%20Science%20Tutor%20Academy">WhatsApp Us</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>2026 Weekend Classes</h2>
+      <p>Grades 8–12 academic support with focused lessons and revision.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">📚</div><h3>Focused Learning</h3><p>Lessons are structured to make difficult topics easier to understand and practise.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>Exam Preparation</h3><p>Revision support to help learners prepare for tests, examinations and assessments.</p></div>
+      <div class="card"><div class="icon">💻</div><h3>Online Options</h3><p>Choose online lessons when you need flexible learning from home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="subjects" id="subjects">
+  <div class="container">
+    <div class="section-title">
+      <h2>Subjects</h2>
+      <p>Support available across Grades 8–12.</p>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-box">
+        <h3>Grades 8–9</h3>
+        <div class="subjects-list">
+          <span class="subject">Mathematics</span>
+          <span class="subject">EMS</span>
+          <span class="subject">Natural Science</span>
+          <span class="subject">Social Science</span>
+        </div>
+      </div>
+      <div class="subject-box">
+        <h3>Grades 10–12</h3>
+        <div class="subjects-list">
+          <span class="subject">Mathematics</span>
+          <span class="subject">Physical Science</span>
+          <span class="subject">Life Science</span>
+          <span class="subject">Geography</span>
+          <span class="subject">Accounting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="rates">
+  <div class="container">
+    <div class="section-title">
+      <h2>Lesson Rates</h2>
+      <p>Choose the lesson option that suits your learning needs.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card highlight">
+        <div><h3>In-person Lesson</h3><div class="price">R150 / hour</div></div>
+        <div class="note">Transport excluded.</div>
+      </div>
+      <div class="price-card">
+        <div><h3>Online Lesson</h3><div class="price">R75 / hour</div></div>
+        <div class="note">Flexible online learning.</div>
+      </div>
+      <div class="price-card">
+        <div><h3>Group Online Lesson</h3><div class="price">R400 / month</div></div>
+        <div class="note">Online group learning.</div>
+      </div>
+      <div class="price-card">
+        <div><h3>1-to-1 Online Lesson</h3><div class="price">R650</div></div>
+        <div class="note">One-on-one online support.</div>
+      </div>
+      <div class="price-card">
+        <div><h3>Revision</h3><div class="price">R80 / hour</div></div>
+        <div class="note">Revision and exam preparation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div>
+        <h2>Ready to learn?</h2>
+        <p>Contact MR JACOB SCIENCE TUTOR ACADEMY to ask about lessons, subjects, availability and registration.</p>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="https://wa.me/27606087792?text=Hello%20Mr%20Jacob%20Science%20Tutor%20Academy%2C%20I%20would%20like%20to%20ask%20about%20lessons.">Chat on WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+27606087792">Call 060 608 7792</a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item"><strong>WhatsApp / Contact</strong>060 608 7792</div>
+        <div class="contact-item"><strong>Slogan</strong>Knowledge is power</div>
+        <div class="contact-item"><strong>Academy</strong>MR JACOB SCIENCE TUTOR ACADEMY</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <strong>MR JACOB SCIENCE TUTOR ACADEMY</strong><br>
+    “Knowledge is power” · © 2026
+  </div>
+</footer>
+
+<a class="whatsapp" aria-label="WhatsApp" href="https://wa.me/27606087792?text=Hello%20Mr%20Jacob%20Science%20Tutor%20Academy">WA</a>
+
+</body>
+</html>
